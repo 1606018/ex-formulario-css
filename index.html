@@ -11,31 +11,33 @@
     <title>Exercício Form CSS</title>
 </head>
 
-<body>
+<body >
 
-    <header>
-        <img src="images/morango.png" alt="Ícone de Morango">
-        <h1>Cadastro de produtos:</h1>
-    </header>
+    <div class="container">
+        <header>
+            <img src="images/morango.png" alt="Ícone de Morango">
+            <h1>Cadastro de produtos:</h1>
+        </header>
 
-    <div>
-        <p>Informe nos campos a seguir os dados do produto a ser cadastrado</p>
+        <div>
+            <p>Informe nos campos a seguir os dados do produto a ser cadastrado</p>
 
-        <form action="https://api-dwi.herokuapp.com/api/examples" method="post">
-            <input placeholder="Nome do Produto" type="text" name="produtoNome" id="">
-            <input placeholder="Preço do produto" type="number" name="produtoPreco" id="">
-            <hr>
-            <input placeholder="Quantidade" type="number" name="produtoQuantidade" id="">
-            <select name="produtoCategoria" id="">
-                <option value="">Selecione a categoria</option>
-                <option value="frutas">Frutas</option>
-                <option value="verduras">Verduras</option>
-                <option value="doces">Doces</option>
-                <option value="salgados">Salgados</option>
-            </select>
-            <hr>
-            <button class="botao-enviar" type="submit">CADASTRAR</button>
-        </form>
+            <form action="https://api-dwi.herokuapp.com/api/examples" method="post">
+                <input placeholder="Nome do Produto" type="text" name="produtoNome" id="">
+                <input placeholder="Preço do produto" type="number" name="produtoPreco" id="">
+                <hr>
+                <input placeholder="Quantidade" type="number" name="produtoQuantidade" id="">
+                <select name="produtoCategoria" id="">
+                    <option value="">Selecione a categoria</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="verduras">Verduras</option>
+                    <option value="doces">Doces</option>
+                    <option value="salgados">Salgados</option>
+                </select>
+                <hr>
+                <button class="botao-enviar" type="submit">CADASTRAR</button>
+            </form>
+        </div>
     </div>
 
 </body>
